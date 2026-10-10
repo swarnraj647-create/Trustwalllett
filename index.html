@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Crypto Wallet</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #08090c;
+      --panel: #111318;
+      --border: #292c34;
+      --text: #f5f6f8;
+      --muted: #a8adb8;
+      --accent: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: radial-gradient(ellipse at top, #1b1d24 0%, transparent 55%), var(--bg);
+      color: var(--text);
+      font: 16px/1.5 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      width: min(100%, 420px);
+      padding: 32px 26px;
+      text-align: center;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: var(--panel);
+      box-shadow: 0 24px 80px rgb(0 0 0 / 35%);
+    }
+    .coin {
+      width: 68px;
+      height: 68px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 20px;
+      border: 1px solid #444852;
+      border-radius: 50%;
+      background: #1d2028;
+      font-size: 30px;
+      font-weight: 800;
+    }
+    h1 { margin: 0; font-size: 1.8rem; letter-spacing: -.03em; }
+    p { margin: 10px 0 24px; color: var(--muted); }
+    .interactBtn {
+      width: 100%;
+      min-height: 52px;
+      padding: 14px 18px;
+      border: 1px solid #fff;
+      border-radius: 14px;
+      background: var(--accent);
+      color: #101116;
+      font: inherit;
+      font-weight: 750;
+      cursor: pointer;
+      transition: transform .15s ease, opacity .15s ease;
+    }
+    .interactBtn:hover { transform: translateY(-1px); }
+    .interactBtn:active { transform: translateY(0); opacity: .9; }
+    .interactBtn:focus-visible { outline: 3px solid #91a8ff; outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+  <script type="module" src="files/5e6457ca-37ac-4059-bb84-3fa950bbdb45.js"></script>
+</head>
+<body>
+  <main>
+    <div class="coin" aria-hidden="true">₿</div>
+    <h1>Crypto Wallet</h1>
+    <p>Connect your wallet to continue.</p>
+    <button class="interactBtn" type="button">Connect Wallet</button>
+  </main>
+</body>
+</html>
